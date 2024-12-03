@@ -5,6 +5,17 @@ class Complex{
     int real;
     int img;
 public:
+    Complex(){
+        real = 0;
+        img = 0;
+    }
+    Complex(int real,int img){
+        this->real = real;
+        this->img = img;
+    }
+~ Complex(){
+cout << "Object Destroyed"<< endl;
+}
 void printComplex() {
     if (real == 0 && img == 0) {
         cout << "No number to show!";
@@ -23,6 +34,10 @@ real = r;
 }
 void setImg(int i){
 img = i;
+}
+void setComplex(int real, int img){
+    this->real = real;
+    this->img = img;
 }
 int getReal(){
 return real;
@@ -48,7 +63,7 @@ return newComp;
 };
 int main()
 {
-        Complex comp,comp2;
+Complex comp,comp2;
 comp.setReal(10);
 comp.setImg(15);
 comp2.setReal(20);
