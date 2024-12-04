@@ -7,31 +7,36 @@ int size;
 public:
 List(){
 arr = new int[1];
-size=1;
+size=0;
+}
+int getSize(){
+return size;
 }
 void push(int x){
-    if(size == 1){
+    if(size == 0){
         arr[0]=x;
         size++;
     return;
     }
 int *temp;
 temp = arr;
-arr=new int[size];
-for(int i =0;i<size-1;i++){
+arr=new int[size+1];
+for(int i =0;i<size;i++){
     arr[i]=temp[i];
 }
-arr[size-1]=x;
+arr[size]=x;
 size++;
 delete []temp;
 }
 int pop(){
+    if(size ==0)
+        return -1;
     size--;
-int x = arr[size-1];
+int x = arr[size];
 int *temp;
 temp = arr;
-arr=new int[size-1];
-for(int i =0;i<size-1;i++){
+arr=new int[size];
+for(int i =0;i<size;i++){
     arr[i]=temp[i];
 }
 delete []temp;
