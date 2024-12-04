@@ -139,12 +139,43 @@ public:
         stck = new Employee[size];
         stackNo++;
     }
+       Stack(Stack &s) { // copy constructor
+                   system("cls");
+
+           cout<< "copy constructor" << endl;
+           Sleep(1000);
+        this->size = s.size;
+        this->top = s.top;
+        this->stck = new Employee[size];
+                for(int i =0;i<size;i++){
+                   this->stck[i].code = s.stck[i].code;
+                   this->stck[i].name = s.stck[i].name;
+                   this->stck[i].salary = s.stck[i].salary;
+                }
+        stackNo++;
+    }
+    Stack operator=(Stack &s){
+        system("cls");
+       cout<< "overload operator" << endl;
+           Sleep(1000);
+        this->size = s.size;
+        this->top = s.top;
+        this->stck = new Employee[size];
+                for(int i =0;i<size;i++){
+                   this->stck[i].code = s.stck[i].code;
+                   this->stck[i].name = s.stck[i].name;
+                   this->stck[i].salary = s.stck[i].salary;
+                }
+        stackNo++;
+    }
 
     Stack(int size) {
         top = -1;
         this->size = size;
         stck = new Employee[size];
         stackNo++;
+                cout << "Stack Created" << endl;
+
     }
 
     int push() {
@@ -169,7 +200,7 @@ public:
     }
 
     int display() {
-                system("cls");
+        system("cls");
         if(top == -1)
             return 0;
         int x;
@@ -187,7 +218,12 @@ public:
         cout << "Stack Destroyed" << endl;
     }
 };
-
+int viewContent(Stack s){
+return s.display();
+}
+/*int viewContent(Stack &s){
+return s.display();
+}*/
 int Stack::stackNo = 0;
 
 int main() {
@@ -253,7 +289,7 @@ int main() {
                     cout << "Removed employee succesfully" << endl;
                 }
                 else{
-                                            system("cls");
+                    system("cls");
                     cout << "Employee list empty" << endl;
                 }
             cout << "Press Backspace to go back" << endl;
@@ -261,7 +297,10 @@ int main() {
                 break;
             }
             case DISPLAY:
-               if(!s1.display())
+               /* Stack s2;
+                s2 = s1;*/
+
+               if(!viewContent(s1))
             cout << "Employee list empty" << endl;
            cout << "Press Backspace to go back" << endl;
 
@@ -284,6 +323,8 @@ int main() {
             gotoxy1(ROW+25,COL-28);
             printf("NAVIGATE USING UP-ARW AND DOWN-ARW AND ENTER TO CHOOSE OR ESC TO EXIT");
         }
-        ch = _getch(); // Update `ch` at the end
+        ch = _getch();
+        if(ch == ESC)
+            system("cls");
     }
 }
