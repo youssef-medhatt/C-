@@ -42,6 +42,15 @@ for(int i =0;i<size;i++){
 delete []temp;
 return x;
 }
+void operator=(List &l){
+this->size = l.size;
+int *temp = this->arr;
+this->arr = new int[l.size];
+for(int i =0;i<size;i++)
+    this->arr[i] = l.arr[i];
+
+delete[] temp;
+}
 ~List(){
 delete []arr;
 }
@@ -52,8 +61,9 @@ int main()
     l.push(1);
     l.push(2);
     l.push(3);
-    l.push(4);
     l.pop();
+    List l2;
+    l2 = l;
 
     return 0;
 }
