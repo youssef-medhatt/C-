@@ -51,6 +51,11 @@ for(int i =0;i<size;i++)
 
 delete[] temp;
 }
+void displayList(){
+for(int i =0;i<size;i++)
+    cout << arr[i] << endl;
+}
+
 ~List(){
 delete []arr;
 }
@@ -64,6 +69,7 @@ int main()
     l.pop();
     List l2;
     l2 = l;
+l2.displayList();
 
     return 0;
 }
