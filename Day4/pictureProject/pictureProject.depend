@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1733567148 source:d:\open source\c++\day3\pictureproject\src\point.cpp
+	"Point.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+	<iostream>
+
+1733405646 d:\open source\c++\day3\pictureproject\include\point.h
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+
+1733567148 source:d:\open source\c++\day3\pictureproject\src\picture.cpp
+	"Picture.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+	<iostream>
+
+1733568064 source:d:\open source\c++\day3\pictureproject\main.cpp
+	<iostream>
+	<D:\OPEN SOURCE\C++\Day3\pictureProject\include\Point.h>
+	<D:\OPEN SOURCE\C++\Day3\pictureProject\include\Line.h>
+	<D:\OPEN SOURCE\C++\Day3\pictureProject\include\Rectange.h>
+	<D:\OPEN SOURCE\C++\Day3\pictureProject\include\Circle.h>
+	<D:\OPEN SOURCE\C++\Day3\pictureProject\include\Picture.h>
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+
+1733568179 source:d:\open source\c++\day3\pictureproject\src\circle.cpp
+	"D:\OPEN SOURCE\C++\Day3\pictureProject\include\Circle.h"
+	"D:\OPEN SOURCE\C++\Day3\pictureProject\include\Point.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+	<iostream>
+
+1733568064 d:\open source\c++\day3\pictureproject\include\circle.h
+	"Point.h"
+	"Shape.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+
+1733567961 source:d:\open source\c++\day3\pictureproject\src\line.cpp
+	"D:\OPEN SOURCE\C++\Day3\pictureProject\include\Line.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+	<iostream>
+
+1733568064 d:\open source\c++\day3\pictureproject\include\line.h
+	"Point.h"
+	"Shape.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+
+1733568084 source:d:\open source\c++\day3\pictureproject\src\rectange.cpp
+	"D:\OPEN SOURCE\C++\Day3\pictureProject\include\Rectange.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+	<iostream>
+
+1733568064 d:\open source\c++\day3\pictureproject\include\rectange.h
+	"Point.h"
+	"Shape.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+
+1733566326 c:\program files\codeblocks\mingw\include\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1733406607 d:\open source\c++\day3\pictureproject\include\picture.h
+	"Point.h"
+	"Line.h"
+	"Rectange.h"
+	"Circle.h"
+	<C:\Program Files\CodeBlocks\MinGW\include\graphics.h>
+
+1733567961 d:\open source\c++\day3\pictureproject\include\shape.h
+
+1733567961 source:d:\open source\c++\day3\pictureproject\src\shape.cpp
+	"Shape.h"
+

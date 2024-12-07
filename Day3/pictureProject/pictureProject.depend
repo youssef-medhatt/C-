@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1733403376 source:d:\open source\c++\day3\pictureproject\src\point.cpp
-	"Point.h"
-
-1733401004 d:\open source\c++\day3\pictureproject\include\point.h
-
-1733403754 source:d:\open source\c++\day3\pictureproject\src\picture.cpp
-	"Picture.h"
-
